@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Schedule Page</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+
+    <body>
+
+        <div id="pg-header">
+            <div class="container">
+                <h1>This is a schedule page</h1>
+                <h3>About blah blah blah.</h3>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="page-header">
+                <h2>2014 Spring Schedule</h2>
+                <h4> Biweekly, Time and Location</h4>
+                <a class="btn btn-default" href="">For any question, please email to blah@blah.blah</a>
+            </div>
+
+            <div class="container" id="pg-body">
+                <div class="row table-head">
+                    <div class="col-md-2">HEADER</div>
+                    <div class="col-md-3">HEADER</div>
+                    <div class="col-md-7">HEADER</div>
+                </div>
+            </div> <!-- /page-body -->
+
+        </div> <!-- /container -->
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="schedule-var.js"></script> <!-- var schedule -->
+        <script src="schedule.js"></script> <!-- feunction generate_schedule -->
+        <script>
+            $(document).ready(
+                $('#pg-body').append(generate_schedule(schedule))
+            );
+        </script>
+    </body>
+
+</html>
